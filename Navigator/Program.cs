@@ -1,5 +1,4 @@
-﻿using Navigator.Navigating;
-using Navigator.Triangulation;
+﻿using Navigator.Triangulation;
 
 var trianInfoA = new TriangulationInfo(
     new TriangulationPoint(12, 19, 5),

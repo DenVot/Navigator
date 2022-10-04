@@ -1,5 +1,3 @@
-using Navigator.Triangulation;
-
 namespace Navigator.Navigating;
 
 public class Circle
