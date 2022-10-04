@@ -1,3 +1,5 @@
+using Navigator.Navigating;
+
 namespace Navigator.Triangulation;
 
 /// <summary>

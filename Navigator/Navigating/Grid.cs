@@ -1,6 +1,4 @@
-using Navigator.Navigating;
-
-namespace Navigator.Triangulation;
+namespace Navigator.Navigating;
 
 public class Grid
 {
