@@ -1,4 +1,6 @@
-namespace Navigator;
+using Navigator.Triangulation;
+
+namespace Navigator.Navigating;
 
 public class Map
 {

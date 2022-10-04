@@ -1,9 +1,11 @@
-namespace Navigator;
+using Navigator.Navigating;
+
+namespace Navigator.Triangulation;
 
 public class Grid
 {
-    public static int Width { get; set; } = 30;
-    public static int Height { get; set; } = 40;
+    public const int Width = 30;
+    public const int Height = 40;
 
     private readonly Cell[,] _cells = new Cell[Height, Width];
     

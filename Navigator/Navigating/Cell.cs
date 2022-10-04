@@ -1,4 +1,4 @@
-namespace Navigator;
+namespace Navigator.Navigating;
 
 public struct Cell
 {

@@ -1,10 +1,23 @@
-﻿using Navigator;
+﻿using Navigator.Navigating;
+using Navigator.Triangulation;
 
-var navigator = new NavigationProcessor();
+var trianInfoA = new TriangulationInfo(
+    new TriangulationPoint(12, 19, 5),
+    new TriangulationPoint(16, 19, 5),
+    new TriangulationPoint(14, 21, 5));
+var trianInfoB = new TriangulationInfo(
+    new TriangulationPoint(16, 1, 2),
+    new TriangulationPoint(12, 9, 50),
+    new TriangulationPoint(13, 13, 8));
 
-navigator.SetAnomaly(7, 7, 60);
 
-navigator.SearchWay(2, 2, 12, 6);
+var anomalies = AnomalyTriangulator.TriangulizeAnomalies(new List<TriangulationInfo>() 
+    {
+        trianInfoA, 
+        trianInfoB
+    });
 
-navigator.Grid.Print();
-
+foreach (var anomalyInfo in anomalies)
+{
+    Console.WriteLine($"{anomalyInfo.X} {anomalyInfo.Y} {anomalyInfo.Intensive}");
+}
